@@ -14,44 +14,60 @@ namespace tattoo_parlor
     public partial class auth : Form
     {
         public static DataTable dt;
-        public static bool StatusUserAdmin;
+        public static bool StatusUserAdmin = false;
 
         public auth()
         {
             InitializeComponent();
-            this.KeyPreview = true;
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.auth_KeyUp);
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-        }
-
-        private void auth_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter) button1.PerformClick();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                if (comboBox1.SelectedIndex == -1) { MessageBox.Show("Пользователь не выбран из списка"); return; }
                 if (textBox1.Text == "") { MessageBox.Show("Логин не введен"); return; }
                 if (textBox2.Text == "") { MessageBox.Show("Пароль не введен"); return; }
                 if (dt.Rows.Count <= 0) { MessageBox.Show("Ошибка БД"); return; }
-                int indexCombobox = comboBox1.SelectedIndex;
-                string password = textBox2.Text;
-                string login = textBox1.Text;
-                if (dt.Rows[indexCombobox][2].ToString() == login)
+                if (comboBox1.SelectedIndex == -1)
                 {
-                    if (dt.Rows[indexCombobox][3].ToString() == password)
+                    string password = textBox2.Text;
+                    string login = textBox1.Text;
+                    bool loginFlag = true;
+                    for (int i = 0; i < dt.Rows.Count; i++)
                     {
-                        if (dt.Rows[indexCombobox][4].ToString() == "user") { StatusUserAdmin = false; } else { StatusUserAdmin = true; }
-                        main_form form = new main_form();
-                        this.Visible = false;
-                        form.ShowDialog();
+                        if (dt.Rows[i][2].ToString() == login)
+                        {
+                            loginFlag = false;
+                            if (dt.Rows[i][3].ToString() == password)
+                            {
+                                if (dt.Rows[i][4].ToString() == "user") { StatusUserAdmin = false; } else { StatusUserAdmin = true; }  
+                                main_form form = new main_form();
+                                this.Visible = false;
+                                form.ShowDialog();
+                            }
+                            else { MessageBox.Show("Пароль введен неверно"); return; }
+                        }
                     }
-                    else { MessageBox.Show("Пароль введен неверно"); return; }
+                    if (loginFlag) { MessageBox.Show("Пользователя с таким логином нет"); loginFlag = false; return; }
                 }
-                else { MessageBox.Show("Логин введен неверно"); return; }
+                else
+                {
+                    int indexCombobox = comboBox1.SelectedIndex;
+                    string password = textBox2.Text;
+                    string login = textBox1.Text;
+                    if (dt.Rows[indexCombobox][2].ToString() == login)
+                    {
+                        if (dt.Rows[indexCombobox][3].ToString() == password)
+                        {
+                            if (dt.Rows[indexCombobox][4].ToString() == "user") { StatusUserAdmin = false; } else { StatusUserAdmin = true; }
+                            main_form form = new main_form();
+                            this.Visible = false;
+                            form.ShowDialog();
+                        }
+                        else { MessageBox.Show("Пароль введен неверно"); return; }
+                    }
+                    else { MessageBox.Show("Логин введен неверно"); return; }
+                }
             }
             catch (Exception err) { MessageBox.Show(err.Message); return; }
         }
@@ -89,6 +105,12 @@ namespace tattoo_parlor
                 }
             }
             catch (Exception err) { MessageBox.Show(err.Message); return; }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int indexCombobox = comboBox1.SelectedIndex;
+            textBox1.Text = dt.Rows[indexCombobox][2].ToString();
         }
     }
 }

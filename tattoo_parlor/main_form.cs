@@ -51,5 +51,13 @@ namespace tattoo_parlor
             this.Visible = false;
             form.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            auth.StatusUserAdmin = false;
+            auth form = new auth();
+            this.Visible = false;
+            form.Show();
+        }
     }
 }
