@@ -89,8 +89,8 @@ namespace tattoo_parlor
         private void auth_Load(object sender, EventArgs e)
         {
             try 
-            { 
-                dt = Requests.UsersDB();
+            {
+                dt = Requests.SELECTUsersDB();
                 if (dt.Rows.Count > 0)
                 {
                     for (int i = 0; i < dt.Rows.Count; i++)

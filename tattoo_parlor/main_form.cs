@@ -35,7 +35,7 @@ namespace tattoo_parlor
         {
             reg form = new reg();
             this.Visible = false;
-            form.ShowDialog();
+            form.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

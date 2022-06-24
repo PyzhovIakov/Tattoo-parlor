@@ -26,3 +26,4 @@ C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tat
 C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.reg.resources
 C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.view.resources
 C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.csprojResolveAssemblyReference.cache
