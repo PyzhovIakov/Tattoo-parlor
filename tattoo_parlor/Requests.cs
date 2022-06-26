@@ -22,6 +22,7 @@ namespace tattoo_parlor
             }
             catch { return dt; }
         }
+
         public static bool INSERTUsersDB(string N, string L, string P, string S)
         {
             DataTable dt = new DataTable();
@@ -33,6 +34,45 @@ namespace tattoo_parlor
                 return true;
             }
             catch { return false; }
+        }
+
+        public static DataTable SELECTWorkDB()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = db.mdb");
+                OleDbDataAdapter ada = new OleDbDataAdapter("SELECT * FROM [work]", con);
+                ada.Fill(dt);
+                return dt;
+            }
+            catch { return dt; }
+        }
+
+        public static DataTable SELECTClientDB()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = db.mdb");
+                OleDbDataAdapter ada = new OleDbDataAdapter("SELECT * FROM client", con);
+                ada.Fill(dt);
+                return dt;
+            }
+            catch { return dt; }
+        }
+
+        public static DataTable SELECTMasterDB()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                OleDbConnection con = new OleDbConnection(@"Provider = Microsoft.ACE.OLEDB.12.0; Data Source = db.mdb");
+                OleDbDataAdapter ada = new OleDbDataAdapter("SELECT * FROM master", con);
+                ada.Fill(dt);
+                return dt;
+            }
+            catch { return dt; }
         }
     }
 }

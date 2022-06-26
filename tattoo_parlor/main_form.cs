@@ -49,7 +49,7 @@ namespace tattoo_parlor
         {
             view form = new view();
             this.Visible = false;
-            form.ShowDialog();
+            form.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
