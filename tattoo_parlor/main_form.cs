@@ -42,7 +42,7 @@ namespace tattoo_parlor
         {
             add form = new add();
             this.Visible = false;
-            form.ShowDialog();
+            form.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

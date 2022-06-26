@@ -85,6 +85,8 @@ namespace tattoo_parlor
                     dataGridView2.Rows[i].Cells[1].Value = master;
                     dataGridView2.Rows[i].Cells[2].Value = work.Rows[i][3].ToString();
                     dataGridView2.Rows[i].Cells[3].Value = work.Rows[i][4].ToString();
+                    dataGridView2.Rows[i].Cells[4].Value = work.Rows[i][5].ToString();
+
                 }
             }
             catch (Exception err) { MessageBox.Show(err.Message); return; }

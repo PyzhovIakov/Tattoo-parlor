@@ -90,6 +90,7 @@ namespace tattoo_parlor
         {
             try 
             {
+                comboBox1.Items.Clear();
                 dt = Requests.SELECTUsersDB();
                 if (dt.Rows.Count > 0)
                 {

@@ -27,3 +27,17 @@ C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tat
 C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.view.resources
 C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.csproj.GenerateResource.Cache
 C:\Users\User\Desktop\практика\Сенцов\Пыжов Яков\_src\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\bin\Debug\tattoo_parlor.exe.config
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.exe
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.pdb
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\bin\Debug\tattoo_parlor.exe
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\bin\Debug\tattoo_parlor.pdb
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.add.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.auth.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.Delet_Edit.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.main_form.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.Properties.Resources.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.reg.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.view.resources
+C:\Users\User\Desktop\tattoo_parlor\tattoo_parlor\obj\Debug\tattoo_parlor.csproj.GenerateResource.Cache

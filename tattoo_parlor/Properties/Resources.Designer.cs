@@ -73,6 +73,36 @@ namespace tattoo_parlor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Transparent_backgr_gCl2r27vo0fu2de {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Transparent-backgr-gCl2r27vo0fu2de", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Transparent_backgr_IVVlQfAZsCj4n {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Transparent-backgr-IVVlQfAZsCj4n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgonline_com_ua_Transparent_backgr_R0VNFGPSqlLJEevf {
+            get {
+                object obj = ResourceManager.GetObject("imgonline-com-ua-Transparent-backgr-R0VNFGPSqlLJEevf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reg {
             get {
                 object obj = ResourceManager.GetObject("reg", resourceCulture);
