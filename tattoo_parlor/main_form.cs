@@ -28,7 +28,7 @@ namespace tattoo_parlor
         {
             Delet_Edit form = new Delet_Edit();
             this.Visible = false;
-            form.ShowDialog();
+            form.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -59,5 +59,6 @@ namespace tattoo_parlor
             this.Visible = false;
             form.Show();
         }
+
     }
 }

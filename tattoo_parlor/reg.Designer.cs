@@ -258,6 +258,7 @@
             this.Name = "reg";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.reg_FormClosing);
             this.Load += new System.EventHandler(this.reg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

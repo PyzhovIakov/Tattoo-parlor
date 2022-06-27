@@ -104,5 +104,10 @@ namespace tattoo_parlor
                 button4.BackgroundImage = Properties.Resources.view as Bitmap;
             }
         }
+
+        private void reg_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

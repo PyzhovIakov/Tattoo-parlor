@@ -113,5 +113,7 @@ namespace tattoo_parlor
             int indexCombobox = comboBox1.SelectedIndex;
             textBox1.Text = dt.Rows[indexCombobox][2].ToString();
         }
+
+       
     }
 }

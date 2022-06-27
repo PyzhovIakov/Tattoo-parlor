@@ -141,6 +141,11 @@ namespace tattoo_parlor
             this.Visible = false;
             form.ShowDialog();
         }
+
+        private void view_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
        
     }
 }

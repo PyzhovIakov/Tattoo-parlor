@@ -150,13 +150,13 @@ namespace tattoo_parlor
             }
             if (textBox11.Text == "" || textBox11.Text == " " || comboBox2.SelectedIndex == -1 || comboBox3.SelectedIndex == -1 || comboBox4.SelectedIndex == -1)
             {
-                MessageBox.Show("Поля добавления клиента не могут быть путыми"); return;
+                MessageBox.Show("Поля добавления работы не могут быть путыми"); return;
             }
             string C = comboBox2.Text;
             string M = comboBox3.Text;
             DateTime D = dateTimePicker1.Value;
             string T = comboBox4.Text;
-            string S = textBox11.Text; ;
+            string S = textBox11.Text;
             bool FlagINSERT = false;
             FlagINSERT = Requests.INSERTWorkDB(C, M, D.ToString("dd/MM/yyyy"), T, S);
             if (FlagINSERT)
@@ -170,7 +170,7 @@ namespace tattoo_parlor
             }
             else
             {
-                MessageBox.Show("Дата уже занята или проблемы с БД");
+                MessageBox.Show("Дата уже занята");
             }
         }
 
@@ -208,8 +208,9 @@ namespace tattoo_parlor
             catch (Exception err) { MessageBox.Show(err.Message); return; }
         }
 
-       
-
-
+        private void add_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
